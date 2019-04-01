@@ -109,7 +109,7 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2018-10-22}
+    \date{2019-04-01}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -206,11 +206,11 @@ reference tables generated from \texttt{knitr::kable()}, e.g., see Table
 \end{Highlighting}
 \end{Shaded}
 
-\begin{table}
+\begin{table}[t]
 
 \caption{\label{tab:nice-tab}Here is a nice table!}
 \centering
-\begin{tabular}[t]{rrrrl}
+\begin{tabular}{rrrrl}
 \toprule
 Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \midrule
